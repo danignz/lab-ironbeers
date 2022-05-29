@@ -1,9 +1,6 @@
-<div class='card-container'>
+<div class='beer-container'>
   {{#each beersFromApi}}
-    <img width='200' src='{{this.image_url}}' alt='{{this.name}}' />
-    <p>Name: {{this.name}}</p>
-    <p>Description: {{this.description}}</p>
-    <p>Tagline: {{this.tagline}}</p>
+  {{>beerpartial this}}
   {{else}}
     <p>No beers avariable.</p>
   {{/each}}
