@@ -1,0 +1,17 @@
+<div class='card-container2'>
+  {{#each beer}}
+    <img width='200' src='{{this.image_url}}' alt='{{this.name}}' />
+    <p>Name: {{this.name}}</p>
+    <p>Description: {{this.description}}</p>
+    <p>Tagline: {{this.tagline}}</p>
+    <p>Food pairing:</p>
+    <ul>
+    {{#each this.food_pairing}}
+      <li>{{this}}</li>
+    {{/each}}
+    </ul>
+    <p>Brewer tips: {{this.brewers_tips}}</p>
+  {{else}}
+    <p>No beers avariable.</p>
+  {{/each}}
+</div>
