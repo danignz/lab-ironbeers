@@ -90,6 +90,6 @@ footer > p {
   color: #000000;
 }
 
-.beer > p:last-child {
+.beer > p:nth-child(3) {
   color: grey;
 }
