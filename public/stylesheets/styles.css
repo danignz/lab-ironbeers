@@ -16,6 +16,7 @@ body {
   height: 7vh;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 5vh;
 }
 
 .navbar ul {
@@ -93,3 +94,34 @@ footer > p {
 .beer > p:nth-child(3) {
   color: grey;
 }
+
+.beer-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin-left: 10vw;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.beer-container .beer{
+  width: 22vw;
+  height: 45vh;
+  padding: 0vw 1vw;
+}
+
+.beer-container .beer img{
+  width: auto;
+  max-height: 50%;
+  margin-left: 8vw;
+  margin-bottom: 1vh;
+}
+
+.beer-container .beer p{
+ font-size: 12px;
+}
+
+.beer-container .beer a{
+  font-size: 16px;
+ }
