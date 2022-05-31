@@ -1,13 +1,16 @@
-<div id='flex-container2'>
+<div class='flex-container2'>
   {{#each beer}}
   {{>beerpartial this}}
-    <p>Food pairing:</p>
+  <div id="additional">
+    <h4>Food pairing:</h4><br>
     <ul>
     {{#each this.food_pairing}}
-      <li>{{this}}</li>
+      <li>- {{this}}</li>
+      <br>
     {{/each}}
     </ul>
-    <p>Brewer tips: {{this.brewers_tips}}</p>
+    <br><p><b>Brewer tips:</b> {{this.brewers_tips}}</p>
+  </div>
   {{else}}
     <p>No beers avariable.</p>
   {{/each}}
