@@ -1,7 +1,9 @@
 <div class='beer'>
-
-  <img src='{{image_url}}' alt='{{name}}' />
-
+  {{#if image_url}}
+    <img src='{{image_url}}' alt='{{name}}' />
+  {{else}}
+    <img src='images/beer.png' alt='Not image avariable' />
+  {{/if}}
   <div>
     <a href='/beers/{{id}}'><h1>{{name}}</h1></a>
     <p>{{tagline}}</p>
